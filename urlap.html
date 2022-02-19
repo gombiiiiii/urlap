@@ -30,13 +30,38 @@
 
     <article>
        <!-- ürlapokat hozunk létre , adatokat tárolunk -->
-            <form action="/action_page.php" method="post"> <!-- method-hot a postot kell írni ,hogy az url-ben ne jelenjenek meg az adatok -->
-            <label for="vnev">Vezetéknév:</label>
-            <input type="text" id="vnev" name="vnev"><br><br>
+           <!-- <form action="/action_page.php" method="post"> --> <!-- method-hot a postot kell írni ,hogy az url-ben ne jelenjenek meg az adatok -->
+            <form>
+             <fieldset id="nevek"> 
+                 <legend>Név</legend>
+            <label for="vnev" >Vezetéknév:</label>
+            <input type="text" id="vnev" name="vnev" placeholder="Vezetéknév">
 
-            <label for="knev">Keresztnév:</label>
-            <input type="text" id="knev" name="knev"><br><br>
-            <input type="submit" value="Oké">
+            <label for="knev" >Keresztnév:</label>
+            <input type="text" id="knev" name="knev" placeholder="Keresztnév"><br><br> <!-- value="Keresztnév" , ez pedig előre beírt adatot tesz a boxba -->
+            </fieldset>  
+
+            <fieldset id="nemek">  
+                <legend>Ön neme</legend>
+            <input type="radio" id="no" name="nemek" value="No">
+            <label for="No">Nő</label><br>
+            <input type="radio" id="no" name="nemek" value="Ferfi">
+            <label for="Ferfi">Férfi</label><br>
+                <br>
+
+            </fieldset>  
+
+            <fieldset id="kedvnyelv">  
+                <legend>Kedvenc nyelv</legend>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            </fieldset>  
+
+            <input type="button" value="Oké">
       </form>
 
     </article>

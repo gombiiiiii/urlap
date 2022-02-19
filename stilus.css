@@ -52,14 +52,33 @@ footer{
     grid-area: f;
 }
 
+/*űrlap formázása*/
+#nevek{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
 
-
+#nevek label{
+    text-align: right;
+    padding-right: 5px;
+}
+/* mobil nézet:*/
 /* média querik után más ne álljon , max width esetén nagyobbal kezdünk a kissebb felé*/
 @media screen and (max-width:600px) {
     main{
         background-color: red;
         width: 100%;
     }
+    #nevek{        
+        grid-template-columns: auto;
+        font-size: 15pt;
+    }
+    
+    #nevek label{
+        text-align: left;
+        
+    }
+    
 }
 
 @media screen and (max-width:500px) {
