@@ -29,8 +29,15 @@
     </nav>
 
     <article>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Amet totam error consequuntur cumque ea labore corporis asperiores!<br> Ad quae neque ducimus voluptas accusamus officia reiciendis. <br>Labore beatae amet ex possimus.</p> 
-        
+       <!-- ürlapokat hozunk létre , adatokat tárolunk -->
+            <form action="/action_page.php" method="post"> <!-- method-hot a postot kell írni ,hogy az url-ben ne jelenjenek meg az adatok -->
+            <label for="vnev">Vezetéknév:</label>
+            <input type="text" id="vnev" name="vnev"><br><br>
+
+            <label for="knev">Keresztnév:</label>
+            <input type="text" id="knev" name="knev"><br><br>
+            <input type="submit" value="Oké">
+      </form>
 
     </article>
 
